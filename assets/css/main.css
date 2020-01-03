@@ -1,0 +1,26 @@
+body {
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  font-size: 12px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #515a6e;
+  overflow:hidden;
+}
+.margin-left-5{
+  margin-left: 5px;
+}
+.margin-top-5{
+  margin-top: 5px;
+}
+.clearfix{
+  clear: both;
+}
+.pull-left{
+  float: left;
+}
+.pull-right{
+  float: right;
+}
