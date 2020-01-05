@@ -13,6 +13,7 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_iview_2298c11a from 'nuxt_plugin_iview_2298c11a' // Source: ../plugins/iview (mode: 'all')
+import nuxt_plugin_utils_2340f33d from 'nuxt_plugin_utils_2340f33d' // Source: ../plugins/utils (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -171,6 +172,10 @@ async function createApp (ssrContext) {
 
   if (typeof nuxt_plugin_iview_2298c11a === 'function') {
     await nuxt_plugin_iview_2298c11a(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_utils_2340f33d === 'function') {
+    await nuxt_plugin_utils_2340f33d(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

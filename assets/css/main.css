@@ -9,6 +9,22 @@ body {
   color: #515a6e;
   overflow:hidden;
 }
+.more-search-icon{
+  padding:5px 10px;
+  border: 1px solid #dcdee2;
+}
+.table-opr-btn{
+  padding:5px 5px;
+}
+table th a{
+  color: #515a6e;
+}
+.color-success{
+  color: #19be6b;
+}
+.color-error{
+  color: #ed4014;
+}
 .margin-left-5{
   margin-left: 5px;
 }
@@ -23,4 +39,13 @@ body {
 }
 .pull-right{
   float: right;
+}
+.font-size-12{
+  font-size: 12px;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
 }
