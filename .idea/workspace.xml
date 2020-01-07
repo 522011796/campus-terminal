@@ -2,29 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8494b111-d983-4c9a-95c3-99f7f550e8df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/plugins/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/fullScreenLayout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/WechatIMG1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/WechatIMG2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/login-bg.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/login-bg.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nuxt/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/listTest.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/listTest.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/ai-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/ai-menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/baseinfo-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/baseinfo-menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/bigdata-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/bigdata-menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/datashow-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/datashow-menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/dorm-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/dorm-menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/face-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/face-menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/flow-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/flow-menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/jiaowu-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/jiaowu-menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/ketangkaoqing-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/ketangkaoqing-menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/logcenter-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/logcenter-menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/notice-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/notice-menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/onecard-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/onecard-menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/stuadnter-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/stuadnter-menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/xingzheng-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/xingzheng-menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/xuegong-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/xuegong-menu.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,10 +49,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/img" />
+      <recent name="$PROJECT_DIR$/layouts" />
       <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/assets/img" />
       <recent name="$PROJECT_DIR$/assets" />
-      <recent name="$PROJECT_DIR$/assets/css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
@@ -95,7 +82,7 @@
       <updated>1577685492485</updated>
       <workItem from="1577689789903" duration="133000" />
       <workItem from="1577689939277" duration="34353000" />
-      <workItem from="1578103710161" duration="21029000" />
+      <workItem from="1578103710161" duration="34928000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1578051417869</created>
@@ -104,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578051417869</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <created>1578237109489</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578237109489</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,10 +116,10 @@
       <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="458" y="181" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.809@0.23.1440.809" timestamp="1577757780155" />
-    <state x="123" y="30" key="CommitChangelistDialog2" timestamp="1578051387063">
+    <state x="123" y="30" key="CommitChangelistDialog2" timestamp="1578237108695">
       <screen x="0" y="23" width="1440" height="809" />
     </state>
-    <state x="123" y="30" key="CommitChangelistDialog2/0.23.1440.809@0.23.1440.809" timestamp="1578051387063" />
+    <state x="123" y="30" key="CommitChangelistDialog2/0.23.1440.809@0.23.1440.809" timestamp="1578237108695" />
     <state x="565" y="328" key="Github.ShareDialog" timestamp="1578051192768">
       <screen x="0" y="23" width="1440" height="809" />
     </state>
@@ -134,10 +128,10 @@
       <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="313" y="141" key="Github.UntrackedFilesDialog/0.23.1440.809@0.23.1440.809" timestamp="1578051199747" />
-    <state x="320" y="167" key="Vcs.Push.Dialog.v2" timestamp="1578051423935">
+    <state x="320" y="167" key="Vcs.Push.Dialog.v2" timestamp="1578237116055">
       <screen x="0" y="23" width="1440" height="809" />
     </state>
-    <state x="320" y="167" key="Vcs.Push.Dialog.v2/0.23.1440.809@0.23.1440.809" timestamp="1578051423935" />
+    <state x="320" y="167" key="Vcs.Push.Dialog.v2/0.23.1440.809@0.23.1440.809" timestamp="1578237116055" />
     <state x="397" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1577689852243">
       <screen x="0" y="23" width="1440" height="809" />
     </state>

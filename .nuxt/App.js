@@ -15,8 +15,9 @@ import '../assets/css/main.css'
 import '../assets/font-awesome-4.7.0/css/font-awesome.min.css'
 
 import _6f6c098b from '../layouts/default.vue'
+import _3d28c24a from '../layouts/fullScreenLayout.vue'
 
-const layouts = { "_default": _6f6c098b }
+const layouts = { "_default": _6f6c098b,"_fullScreenLayout": _3d28c24a }
 
 export default {
   head: {"title":"campus-terminal","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"campus terminal"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
