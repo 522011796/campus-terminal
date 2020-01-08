@@ -11,5 +11,8 @@ export const mutations = {
   },
   SET_DEFAULT_RIGHT_OVERFLOWY(state, value) {
     state.setDefaultRightOverflowy = value;
+  },
+  SET_ALL_LOADING(state, value){
+    state.setAllLoading = value;
   }
 }

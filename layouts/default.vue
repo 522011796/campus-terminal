@@ -206,6 +206,11 @@
         <div class="rightnav-default-content-layout" :style="styleMenuObjectRight">
           <nuxt ref="mychild"/>
         </div>
+
+        <Spin v-if="showLoading" fix>
+          <Icon type="ios-loading" size=35 class="demo-spin-icon-load"></Icon>
+          <div>Loading</div>
+        </Spin>
       </div>
       <div class="clearfix"></div>
     </div>
@@ -217,6 +222,7 @@
     data () {
       return {
         showSubMenu: false,
+        showLoading: false,
         mainMenuTitle: '',
         subMenuList: [],
         styles:{
@@ -239,7 +245,7 @@
         }
       });
       if (process.browser) {
-        console.log(_self.$refs.mychild);
+        //console.log(_self.$refs.mychild);
         window.onresize = function () {
           _self.hh();
           _self.$refs.mychild.$children[0].tableH();//设置子页面的函数
@@ -284,7 +290,7 @@
         this.$store.commit("SET_DEFAULT_RIGHT_OVERFLOWY",true);
       },
       '$store.state.setDefaultRightOverflowy': function () {
-        console.log(this.$store.state.setDefaultRightOverflowy);
+        //console.log(this.$store.state.setDefaultRightOverflowy);
         if(this.$store.state.setDefaultRightOverflowy == false){
           this.styleMenuObjectRight["overflow-y"] = 'hidden';
         }else{
@@ -520,5 +526,8 @@
 }
 .poptip-content-list-item{
   padding:5px 8px;
+}
+.demo-spin-icon-load{
+  animation: ani-demo-spin 1s linear infinite;
 }
 </style>
