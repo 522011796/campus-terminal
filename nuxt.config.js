@@ -33,7 +33,8 @@ module.exports = {
   */
   plugins: [
     '@/plugins/iview',
-    '@/plugins/utils'
+    '@/plugins/utils',
+    '@/plugins/axios'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -44,7 +45,22 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/proxy'
   ],
+  axios: {
+    proxy: true, // 表示开启代理
+    credentials: true // 表示跨域请求时是否需要使用凭证
+  },
+  proxy: {
+    '/proxy': {
+      target: 'http://campusttest.9451.org:10201', // 目标接口域名
+      changeOrigin: true, // 表示是否跨域
+      pathRewrite: {
+        '^/proxy': '/', // 把 /api 替换成 /
+      }
+    }
+  },
   /*
   ** Build configuration
   */
@@ -53,7 +69,8 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
-    }
+    },
+    vendor: ['axios','utils','iview'] //为防止重复打包
   },
   router: {
     middleware: ['state','webMiddle']

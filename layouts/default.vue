@@ -116,52 +116,52 @@
       <!--menu layout-->
       <div class="leftnav-default-layout">
         <div class="leftnav-default-content-layout">
-          <div class="leftnav-default-mainmenu-layout history-layout" data-subMenu="true" data-name="baseinfo" @mouseenter="selMainMenu($event)">
+          <div class="leftnav-default-mainmenu-layout history-layout" data-subMenu="true" @mouseenter="selMainMenu($event)">
             <i class="fa fa-navicon list-icon" data-subMenu="true"></i>
           </div>
-          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" data-name="baseinfo" @mouseenter="selMainMenu($event)">
+          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" data-name="baseinfoMenu" @mouseenter="selMainMenu($event)">
             <img src="~static/img/baseinfo-menu.png" class="menu-icon" data-subMenu="true">
           </div>
-          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" @mouseenter="selMainMenu($event)">
+          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" data-name="noticeMenu" @mouseenter="selMainMenu($event)">
             <img src="~static/img/notice-menu.png" class="menu-icon" data-subMenu="true">
           </div>
-          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" @mouseenter="selMainMenu($event)">
+          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" data-name="studentAndTeacherMenu" @mouseenter="selMainMenu($event)">
             <img src="~static/img/stuadnter-menu.png" class="menu-icon" data-subMenu="true">
           </div>
-          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" @mouseenter="selMainMenu($event)">
+          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" data-name="jiaowuMenu" @mouseenter="selMainMenu($event)">
             <img src="~static/img/jiaowu-menu.png" class="menu-icon" data-subMenu="true">
           </div>
-          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" @mouseenter="selMainMenu($event)">
+          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" data-name="studentManageMenu" @mouseenter="selMainMenu($event)">
             <img src="~static/img/xuegong-menu.png" class="menu-icon" data-subMenu="true">
           </div>
-          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" @mouseenter="selMainMenu($event)">
+          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" data-name="flowCenterMenu" @mouseenter="selMainMenu($event)">
             <img src="~static/img/flow-menu.png" class="menu-icon" data-subMenu="true">
           </div>
-          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" @mouseenter="selMainMenu($event)">
+          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" data-name="dormManageMenu" @mouseenter="selMainMenu($event)">
             <img src="~static/img/dorm-menu.png" class="menu-icon" data-subMenu="true">
           </div>
-          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" @mouseenter="selMainMenu($event)">
+          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" data-name="ketangkaoqingMenu" @mouseenter="selMainMenu($event)">
             <img src="~static/img/ketangkaoqing-menu.png" class="menu-icon" data-subMenu="true">
           </div>
-          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" @mouseenter="selMainMenu($event)">
+          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" data-name="xingzhengkaoqinMenu" @mouseenter="selMainMenu($event)">
             <img src="~static/img/xingzheng-menu.png" class="menu-icon" data-subMenu="true">
           </div>
-          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" @mouseenter="selMainMenu($event)">
+          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" data-name="oneCardMenu" @mouseenter="selMainMenu($event)">
             <img src="~static/img/onecard-menu.png" class="menu-icon" data-subMenu="true">
           </div>
-          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" @mouseenter="selMainMenu($event)">
+          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" data-name="aiDeviceManageMenu" @mouseenter="selMainMenu($event)">
             <img src="~static/img/ai-menu.png" class="menu-icon" data-subMenu="true">
           </div>
-          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" @mouseenter="selMainMenu($event)">
+          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" data-name="aiAuthMenu" @mouseenter="selMainMenu($event)">
             <img src="~static/img/face-menu.png" class="menu-icon" data-subMenu="true">
           </div>
-          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" @mouseenter="selMainMenu($event)">
+          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" data-name="bigDataMenu" @mouseenter="selMainMenu($event)">
             <img src="~static/img/bigdata-menu.png" class="menu-icon" data-subMenu="true">
           </div>
-          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" @mouseenter="selMainMenu($event)">
+          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" data-name="showDataMenu" @mouseenter="selMainMenu($event)">
             <img src="~static/img/datashow-menu.png" class="menu-icon" data-subMenu="true">
           </div>
-          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" @mouseenter="selMainMenu($event)">
+          <div class="leftnav-default-mainmenu-layout" data-subMenu="true" data-name="logCenterMenu" @mouseenter="selMainMenu($event)">
             <img src="~static/img/logcenter-menu.png" class="menu-icon" data-subMenu="true">
           </div>
         </div>
@@ -169,9 +169,16 @@
       <!--二级菜单-->
       <div class="leftnav-default-submenu-layout" data-subMenu="true" v-if="showSubMenu">
         <div class="leftnav-default-submenu-title">
-          xxxxxx
+          {{mainMenuTitle}}
         </div>
-        <nuxt-link to="/formTest">
+        <nuxt-link v-for="(item,index) in subMenuList" :key="index" :to="item.url">
+          <div class="leftnav-default-submenu-menulist">
+            <span>
+              {{item.title}}
+            </span>
+          </div>
+        </nuxt-link>
+        <!--<nuxt-link to="/formTest">
           <div class="leftnav-default-submenu-menulist">
             <span>
               表单测试页面
@@ -184,7 +191,7 @@
               列表测试页面
             </span>
           </div>
-        </nuxt-link>
+        </nuxt-link>-->
       </div>
       <div class="rightnav-default-layout">
         <div class="breadcrumb-title">
@@ -197,7 +204,7 @@
           <Divider class="divider-line"/>
         </div>
         <div class="rightnav-default-content-layout" :style="styleMenuObjectRight">
-          <nuxt />
+          <nuxt ref="mychild"/>
         </div>
       </div>
       <div class="clearfix"></div>
@@ -210,6 +217,8 @@
     data () {
       return {
         showSubMenu: false,
+        mainMenuTitle: '',
+        subMenuList: [],
         styles:{
           background:''
         },
@@ -221,25 +230,29 @@
       }
     },
     mounted() {
+      let _self = this;
       document.addEventListener('click',e => {
         if(!e.target.dataset.submenu){
-          this.showSubMenu = false//点击其他区域关闭
+          this.showSubMenu = false;//点击其他区域关闭
         }else{
-          this.showSubMenu = true
+          this.showSubMenu = true;
         }
       });
+      if (process.browser) {
+        console.log(_self.$refs.mychild);
+        window.onresize = function () {
+          _self.hh();
+          _self.$refs.mychild.$children[0].tableH();//设置子页面的函数
+        }
+      }
     },
     created(){
       this.hh();
-      if (process.browser) {
-        if (localStorage.getItem("SET_DEFAULT_RIGHT_OVERFLOWY") == "false") {
-          this.styleMenuObjectRight["overflow-y"] = 'hidden';
-        }
-      }
     },
     methods: {
       hh(){
         if (process.browser) {
+          console.log(window.innerHeight - 80);
           this.styleMenuObjectRight.height = window.innerHeight - 80 + 'px';
           /*this.$nextTick(function () {
             //默认选中
@@ -249,6 +262,18 @@
       },
       selMainMenu(event){
         this.showSubMenu = true;
+        this.subMenuList = [];
+
+        this.$axios.get('/json/menuJson.json').then((res)=>{
+          let menuList = res.data.menuList;
+          for (let i = 0; i < menuList.length; i++){
+            if (menuList[i].mainMenu.name == event.target.dataset.name){
+              this.subMenuList = menuList[i].mainMenu.subMenu;
+              this.mainMenuTitle = menuList[i].mainMenu.title;
+              break;
+            }
+          }
+        });
       },
       showGruid(event){
         this.gruidDrawer = true;
@@ -259,6 +284,7 @@
         this.$store.commit("SET_DEFAULT_RIGHT_OVERFLOWY",true);
       },
       '$store.state.setDefaultRightOverflowy': function () {
+        console.log(this.$store.state.setDefaultRightOverflowy);
         if(this.$store.state.setDefaultRightOverflowy == false){
           this.styleMenuObjectRight["overflow-y"] = 'hidden';
         }else{
@@ -402,7 +428,7 @@
   line-height: 30px;
   border-bottom: 1px solid #e8eaec;
   font-weight: bold;
-  color:#808695;
+  color:#5cadff;
 }
 .leftnav-default-submenu-menulist{
   padding:8px 20px;

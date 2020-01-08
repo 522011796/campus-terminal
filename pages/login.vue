@@ -27,7 +27,7 @@
                   <i class="fa fa-indent"></i>
                   <label>切换为管理员</label>
                 </span>
-                  <span v-if="showAdmin == true" @click="changeRole('student')">
+                  <span v-if="showAdmin == true" @click="changeRole('teacher')">
                   <i class="fa fa-indent"></i>
                   <label>切换为教师</label>
                 </span>
@@ -45,31 +45,58 @@
                 </div>
 
                 <div v-if="showStudent == true" class="login-form-input-content">
-                  <div>
-                    <Input prefix="ios-contact-outline" placeholder="用户名/手机号" size="large" style="width: 60%" />
+                  <div v-if="teacherloginType == 'user'">
+                    <div>
+                      <Input prefix="ios-contact-outline" placeholder="用户名/手机号" size="large" style="width: 60%" />
+                    </div>
+                    <div class="margin-top-20">
+                      <Input prefix="ios-unlock-outline" placeholder="密码" size="large" style="width: 60%" />
+                    </div>
                   </div>
-                  <div class="margin-top-20">
-                    <Input prefix="ios-unlock-outline" placeholder="密码" size="large" style="width: 60%" />
+
+                  <div v-if="teacherloginType == 'teacherNo'">
+                    <div>
+                      <Input prefix="ios-home-outline" placeholder="学校编号" size="large" style="width: 60%" />
+                    </div>
+                    <div class="margin-top-20">
+                      <Input prefix="ios-contact-outline" placeholder="工号" size="large" style="width: 60%" />
+                    </div>
+                    <div class="margin-top-20">
+                      <Input prefix="ios-unlock-outline" placeholder="密码" size="large" style="width: 60%" />
+                    </div>
                   </div>
-                  <div class="margin-top-20">
-                    <Input prefix="ios-unlock-outline" placeholder="密码" size="large" style="width: 60%" />
+
+                  <div v-if="teacherloginType == 'idcard'">
+                    <div>
+                      <Input prefix="ios-contact-outline" placeholder="身份证号码" size="large" style="width: 60%" />
+                    </div>
+                    <div class="margin-top-20">
+                      <Input prefix="ios-unlock-outline" placeholder="密码" size="large" style="width: 60%" />
+                    </div>
                   </div>
+
                   <div class="margin-top-20">
-                    <Button type="success" size="large" ghost style="width: 60%" >登录</Button>
+                    <Button type="success" size="large" ghost style="width: 60%" @click="login()">登录</Button>
                   </div>
                   <Divider class="login-three-login">
                     <span class="color-success font-size-12">更多登录方式</span>
                   </Divider>
                   <div>
-                  <span class="login-three-item">
-                    <i class="fa fa-user fa-2x"></i>
-                  </span>
                     <span class="login-three-item">
-                    <i class="fa fa-id-card-o fa-2x"></i>
-                  </span>
+                      <Tooltip content="用户名/手机号码" placement="bottom">
+                        <i class="fa fa-user fa-2x" @click="changeTeacherLoginType('user')"></i>
+                      </Tooltip>
+                    </span>
                     <span class="login-three-item">
-                    <i class="fa fa-id-badge fa-2x"></i>
-                  </span>
+                      <Tooltip content="身份证" placement="bottom">
+                        <i class="fa fa-id-card-o fa-2x" @click="changeTeacherLoginType('idcard')"></i>
+                      </Tooltip>
+                    </span>
+                    <span class="login-three-item">
+                      <Tooltip content="工号" placement="bottom">
+                        <i class="fa fa-id-badge fa-2x" @click="changeTeacherLoginType('teacherNo')"></i>
+                      </Tooltip>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -223,12 +250,22 @@ export default {
   },
   data () {
     return {
+      teacherloginType: 'user',
       showStudent: true,
       showAdmin: false,
       contentMainLayout: {
         'height': '',
         'background': '#dddddd',
         'overflow-y': 'auto'
+      }
+    }
+  },
+  mounted() {
+    // 注：window.onresize只能在项目内触发1次
+    var _self = this;
+    if (process.browser) {
+      window.onresize = function () {
+        _self.hh();
       }
     }
   },
@@ -242,13 +279,27 @@ export default {
       }
     },
     changeRole(event){
-      if(event == 'student'){
+      if(event == 'teacher'){
         this.showStudent = true;
         this.showAdmin = false;
       }
       if(event == 'admin'){
         this.showStudent = false;
         this.showAdmin = true;
+      }
+    },
+    changeTeacherLoginType(event){
+      this.teacherloginType = event;
+    },
+    login(){
+      if(this.teacherloginType == 'user'){
+        this.$Message.success("登录方式为 用户名/手机号");
+      }
+      if(this.teacherloginType == 'idcard'){
+        this.$Message.success("登录方式为 身份证");
+      }
+      if(this.teacherloginType == 'teacherNo'){
+        this.$Message.success("登录方式为 工号");
       }
     }
   }

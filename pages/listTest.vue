@@ -290,17 +290,15 @@ export default {
     }
   },
   created(){
+    let _self = this;
     this.tableH();
-    this.$store.commit("SET_DEFAULT_RIGHT_OVERFLOWY",false);
-    if (process.browser) {
-      //localStorage.setItem("SET_DEFAULT_RIGHT_OVERFLOWY", false);
-    }
   },
   methods: {
     tableH(){
       if (process.browser) {
         this.styleTableHeight["max-height"] = window.innerHeight - 80 - 35 - 61 + 'px';
         this.tableHeight = window.innerHeight - 80 - 35 - 61;
+        this.$store.commit("SET_DEFAULT_RIGHT_OVERFLOWY",false);
       }
     },
     selAllList(event){
@@ -311,7 +309,6 @@ export default {
       for(var i=0; i<event.length;i++){
         this.tableListArr.push(event[i].id);
       }
-      console.log(this.tableListArr);
     },
     delAll(event){
       this.$Message.success('这是一个提示信息');
