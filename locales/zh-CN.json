@@ -1,0 +1,28 @@
+{
+  "basicInfo": {
+    "role": {
+      "addRole": "添加角色",
+      "editRole": "编辑角色",
+      "serialNo": "序号",
+      "roleNo": "角色编号",
+      "roleName": "角色名称",
+      "roleStatus": "状态",
+      "roleOpr": "操作",
+      "setRole": "设置权限",
+      "addUser": "分配用户",
+      "edit": "编辑",
+      "delete": "删除",
+      "roles": "权限",
+      "save": "保存",
+      "cancel": "取消",
+      "deleteTips": "确认删除该数据吗？",
+      "info": "提示",
+      "userList": "教师列表",
+      "remove": "移除",
+      "teacherNo": "教师工号",
+      "teacherName": "教师姓名",
+      "teacherDept": "所属部门",
+      "addUser": "添加用户"
+    }
+  }
+}

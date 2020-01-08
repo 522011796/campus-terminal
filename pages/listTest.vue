@@ -46,8 +46,8 @@
         </Col>
       </Row>
     </div>
-    <div class="margin-top-5">
-      <Table border ref="selection" size="small" :height="tableHeight" :columns="columns" :data="data" @on-selection-change="selTableChange($event)">
+    <div class="margin-top-5" :style="styleTableHeight">
+      <Table border ref="selection" size="small" :columns="columns" :data="data" @on-selection-change="selTableChange($event)">
         <template slot-scope="{ row, index }" slot="action">
           <i class="fa fa-edit fa-2x table-opr-btn color-success"></i>
           <i class="fa fa-trash fa-2x table-opr-btn color-error"></i>
@@ -146,61 +146,6 @@ export default {
           address: 'London No. 1 Lake Park',
           date: '2016-10-01',
           id:2
-        },
-        {
-          name: 'Joe Black',
-          age: 30,
-          address: 'Sydney No. 1 Lake Park',
-          date: '2016-10-02',
-          id:3
-        },
-        {
-          name: 'Jon Snow',
-          age: 26,
-          address: 'Ottawa No. 2 Lake Park',
-          date: '2016-10-04'
-        },
-        {
-          name: 'Jon Snow',
-          age: 26,
-          address: 'Ottawa No. 2 Lake Park',
-          date: '2016-10-04'
-        },
-        {
-          name: 'Jon Snow',
-          age: 26,
-          address: 'Ottawa No. 2 Lake Park',
-          date: '2016-10-04'
-        },
-        {
-          name: 'Jon Snow',
-          age: 26,
-          address: 'Ottawa No. 2 Lake Park',
-          date: '2016-10-04'
-        },
-        {
-          name: 'Jon Snow',
-          age: 26,
-          address: 'Ottawa No. 2 Lake Park',
-          date: '2016-10-04'
-        },
-        {
-          name: 'Jon Snow',
-          age: 26,
-          address: 'Ottawa No. 2 Lake Park',
-          date: '2016-10-04'
-        },
-        {
-          name: 'Jon Snow',
-          age: 26,
-          address: 'Ottawa No. 2 Lake Park',
-          date: '2016-10-04'
-        },
-        {
-          name: 'Jon Snow',
-          age: 26,
-          address: 'Ottawa No. 2 Lake Park',
-          date: '2016-10-04'
         },
         {
           name: 'Jon Snow',
@@ -331,8 +276,8 @@ export default {
   border-right: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;*/
   padding:0px 15px;
-  height: 45px;
-  line-height: 45px;
+  height: 40px;
+  line-height: 40px;
   border-left: 1px solid #dddddd;
   border-right: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;

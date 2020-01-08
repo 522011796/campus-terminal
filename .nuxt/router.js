@@ -7,6 +7,7 @@ const _65ccee0c = () => interopDefault(import('../pages/formTest.vue' /* webpack
 const _18c317e6 = () => interopDefault(import('../pages/listTest.vue' /* webpackChunkName: "pages/listTest" */))
 const _bed6997a = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
 const _624df07c = () => interopDefault(import('../pages/basicInfo/organization.vue' /* webpackChunkName: "pages/basicInfo/organization" */))
+const _8a322982 = () => interopDefault(import('../pages/basicInfo/role.vue' /* webpackChunkName: "pages/basicInfo/role" */))
 const _5225dfa8 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
@@ -41,6 +42,10 @@ export const routerOptions = {
     path: "/basicInfo/organization",
     component: _624df07c,
     name: "basicInfo-organization"
+  }, {
+    path: "/basicInfo/role",
+    component: _8a322982,
+    name: "basicInfo-role"
   }, {
     path: "/",
     component: _5225dfa8,

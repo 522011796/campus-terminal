@@ -34,7 +34,8 @@ module.exports = {
   plugins: [
     '@/plugins/iview',
     '@/plugins/utils',
-    '@/plugins/axios'
+    '@/plugins/axios',
+    '@/plugins/i18n'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -70,9 +71,9 @@ module.exports = {
     */
     extend (config, ctx) {
     },
-    vendor: ['axios','utils','iview'] //为防止重复打包
+    vendor: ['axios','utils','iview','i18n'] //为防止重复打包
   },
   router: {
-    middleware: ['state','webMiddle']
+    middleware: ['state','webMiddle','i18n']
   }
 }

@@ -105,7 +105,7 @@
       <div class="clearfix"></div>
 
       <!--向导页面-->
-      <Drawer width="40" :styles="styles" placement="right" title="向导页面" :closable="false" v-model="gruidDrawer">
+      <Drawer width="40" :styles="styles" placement="right" title="向导页面" :closable="false" class-name="drawer-class" v-model="gruidDrawer">
         <div>
           <p>新页面</p>
         </div>

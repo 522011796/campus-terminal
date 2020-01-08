@@ -22,7 +22,8 @@
     "cross-env": "^6.0.3",
     "express": "^4.17.1",
     "nuxt": "^2.11.0",
-    "view-design": "^4.0.2"
+    "view-design": "^4.0.2",
+    "vue-i18n": "^8.15.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

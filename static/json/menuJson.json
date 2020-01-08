@@ -6,12 +6,8 @@
         "title": "基础信息",
         "subMenu": [
           {
-            "title": "组织机构",
-            "url": "/basicInfo/organization"
-          },
-          {
             "title": "角色管理",
-            "url": "/listTest"
+            "url": "/basicInfo/role"
           },
           {
             "title": "学年学期",

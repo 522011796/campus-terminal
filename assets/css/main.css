@@ -58,3 +58,12 @@ table th a{
 .text-left{
   text-align: left;
 }
+.drawer-class .ivu-drawer {
+  width: auto;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+}
+.drawer-role-class {
+  z-index: 1200;
+}
