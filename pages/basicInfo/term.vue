@@ -72,11 +72,11 @@
                           <td>学期名称</td>
                           <td>2016-10-26 至 2019-11-11</td>
                           <td>
-                            <a href="javasripr:;" class="font-size-12 color-success">{{ $t("basicInfo.term.teachSetting") }}</a>
+                            <a href="javasripr:;" class="font-size-12 color-success" @click="settingTeach($event)">{{ $t("basicInfo.term.teachSetting") }}</a>
                             |
-                            <a href="javasripr:;" class="font-size-12">{{ $t("basicInfo.term.edit") }}</a>
+                            <a href="javasripr:;" class="font-size-12" @click="addTermBtn($event)">{{ $t("basicInfo.term.edit") }}</a>
                             |
-                            <a href="javasripr:;" class="font-size-12 color-error">{{ $t("basicInfo.term.delete") }}</a>
+                            <a href="javasripr:;" class="font-size-12 color-error" @click="deleteTermBtn($event)">{{ $t("basicInfo.term.delete") }}</a>
                           </td>
                         </tr>
                     </tbody>
