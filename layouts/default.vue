@@ -248,7 +248,9 @@
         //console.log(_self.$refs.mychild);
         window.onresize = function () {
           _self.hh();
-          _self.$refs.mychild.$children[0].tableH();//设置子页面的函数
+          if(_self.$refs.mychild.$children[0].tableH){
+            _self.$refs.mychild.$children[0].tableH();//设置子页面的函数
+          }
         }
       }
     },
