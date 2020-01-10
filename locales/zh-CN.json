@@ -100,7 +100,6 @@
       "serialNo": "序号",
       "roomNo": "房间编号",
       "floorNum": "楼层",
-      "buildAreaNum": "总面积",
       "countPeople": "容纳人数",
       "videoRoom": "多媒体教室",
       "oprTitle": "操作",
@@ -112,7 +111,17 @@
       "phone": "联系电话",
       "buildSelf": "教学楼",
       "buildNo": "编号",
-      "buildUsed": "教室用途"
+      "roomUsed": "教室用途",
+      "countFloorNum": "总楼层数",
+      "startFloorNum": "起始楼层",
+      "selfProperty": "独立产权",
+      "jointProperty": "联合产权",
+      "hireProperty": "租用",
+      "buildAndFloor": "教学楼/楼层",
+      "classNum": "教室数",
+      "floorSelect": "选择楼层",
+      "floorCopyed": "复制到",
+      "floorNotCopyed": "不可复制楼层"
     }
   },
   "opr": {
