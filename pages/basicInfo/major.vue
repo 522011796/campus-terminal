@@ -372,7 +372,7 @@
         <Row :gutter="20">
           <Col span="12">
             <FormItem :label="$t('basicInfo.major.createTime')" prop="roleName">
-              <Input placeholder=""></Input>
+              <DatePicker type="date" placeholder=""></DatePicker>
             </FormItem>
           </Col>
         </Row>
