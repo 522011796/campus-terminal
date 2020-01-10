@@ -648,9 +648,13 @@ export default {
       ]
     }
   },
+  mounted() {
+
+  },
   created() {
     let _self = this;
     this.tableH();
+    this.init();
   },
   methods:{
     tableH(){
@@ -662,6 +666,15 @@ export default {
         this.tableHeight = window.innerHeight - 80 - 50;
         this.$store.commit("SET_DEFAULT_RIGHT_OVERFLOWY",false);
       }
+    },
+    init(){
+      var _self = this;
+      this.$parent.$parent.showLoading = true;
+
+      setTimeout(function () {
+        //_self.$store.commit("SET_ALL_LOADING",false)
+        _self.$parent.$parent.showLoading = false;
+      },2000);
     },
     test(event){
       console.log(event);

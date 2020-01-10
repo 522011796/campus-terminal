@@ -207,7 +207,7 @@
           <nuxt ref="mychild"/>
         </div>
 
-        <Spin v-if="showLoading" fix>
+        <Spin v-if="showLoading" fix style="z-index: 9999">
           <Icon type="ios-loading" size=35 class="demo-spin-icon-load"></Icon>
           <div>Loading</div>
         </Spin>

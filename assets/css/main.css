@@ -25,8 +25,17 @@ table th a{
 .color-error{
   color: #ed4014;
 }
+.color-warning{
+  color: #ff9900;
+}
 .margin-left-5{
   margin-left: 5px;
+}
+.margin-left-10{
+  margin-left: 10px;
+}
+.margin-left-20{
+  margin-left: 20px;
 }
 .margin-top-5{
   margin-top: 5px;

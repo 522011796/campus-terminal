@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8494b111-d983-4c9a-95c3-99f7f550e8df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/basicInfo/floor.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locales/zh-CN.json" beforeDir="false" afterPath="$PROJECT_DIR$/locales/zh-CN.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/basicInfo/major.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/basicInfo/major.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/json/menuJson.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/json/menuJson.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,15 +45,15 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pages/basicInfo" />
       <recent name="$PROJECT_DIR$/static/img" />
       <recent name="$PROJECT_DIR$/layouts" />
       <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/assets/img" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -78,7 +84,7 @@
       <workItem from="1578618716492" duration="772000" />
       <workItem from="1578619712786" duration="773000" />
       <workItem from="1578620915785" duration="462000" />
-      <workItem from="1578625065524" duration="10670000" />
+      <workItem from="1578625065524" duration="14223000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1578051417869</created>
@@ -143,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578643011861</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="init">
+      <created>1578643087486</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1578643087486</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,10 +174,10 @@
       <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="458" y="181" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.809@0.23.1440.809" timestamp="1577757780155" />
-    <state x="123" y="30" key="CommitChangelistDialog2" timestamp="1578643010698">
+    <state x="123" y="30" key="CommitChangelistDialog2" timestamp="1578643086722">
       <screen x="0" y="23" width="1440" height="809" />
     </state>
-    <state x="123" y="30" key="CommitChangelistDialog2/0.23.1440.809@0.23.1440.809" timestamp="1578643010698" />
+    <state x="123" y="30" key="CommitChangelistDialog2/0.23.1440.809@0.23.1440.809" timestamp="1578643086722" />
     <state x="565" y="328" key="Github.ShareDialog" timestamp="1578051192768">
       <screen x="0" y="23" width="1440" height="809" />
     </state>
@@ -173,10 +186,10 @@
       <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="313" y="141" key="Github.UntrackedFilesDialog/0.23.1440.809@0.23.1440.809" timestamp="1578051199747" />
-    <state x="320" y="167" key="Vcs.Push.Dialog.v2" timestamp="1578643016437">
+    <state x="320" y="167" key="Vcs.Push.Dialog.v2" timestamp="1578643090832">
       <screen x="0" y="23" width="1440" height="809" />
     </state>
-    <state x="320" y="167" key="Vcs.Push.Dialog.v2/0.23.1440.809@0.23.1440.809" timestamp="1578643016437" />
+    <state x="320" y="167" key="Vcs.Push.Dialog.v2/0.23.1440.809@0.23.1440.809" timestamp="1578643090832" />
     <state x="100" y="123" width="1240" height="609" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1578640210656">
       <screen x="0" y="23" width="1440" height="809" />
     </state>

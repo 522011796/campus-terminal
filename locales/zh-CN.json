@@ -91,6 +91,28 @@
       "bulid": "教学楼",
       "collegeAndProfession": "学院/专业",
       "buildAndClassroome": "教学楼/教室"
+    },
+    "floor": {
+      "addFloor": "添加教学楼",
+      "addClass": "添加教室",
+      "multAddClass":"批量添加教室",
+      "copyFloor": "复制楼层",
+      "serialNo": "序号",
+      "roomNo": "房间编号",
+      "floorNum": "楼层",
+      "buildAreaNum": "总面积",
+      "countPeople": "容纳人数",
+      "videoRoom": "多媒体教室",
+      "oprTitle": "操作",
+      "buildName": "教学楼名称",
+      "property": "房屋产权",
+      "buildAreaNum": "建筑面积",
+      "buildTime": "建成年月",
+      "principai": "负责人",
+      "phone": "联系电话",
+      "buildSelf": "教学楼",
+      "buildNo": "编号",
+      "buildUsed": "教室用途"
     }
   },
   "opr": {
