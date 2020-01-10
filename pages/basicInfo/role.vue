@@ -40,12 +40,12 @@
       @on-ok="ok"
       @on-cancel="cancel">
 
-      <Form ref="formValidate" :label-width="80">
+      <Form ref="formValidate" :label-width="120">
         <FormItem :label="$t('basicInfo.role.roleNo')" prop="roleNo">
-          <Input placeholder=""></Input>
+          <Input placeholder="" class="width260"></Input>
         </FormItem>
         <FormItem :label="$t('basicInfo.role.roleName')" prop="roleName">
-          <Input placeholder=""></Input>
+          <Input placeholder="" class="width260"></Input>
         </FormItem>
         <FormItem :label="$t('basicInfo.role.roles')" prop="roles">
           <Tree class="formitem-tree" :data="treeData" show-checkbox></Tree>
@@ -62,12 +62,12 @@
       @on-ok="ok"
       @on-cancel="cancel">
 
-      <Form ref="formValidate" :label-width="80">
+      <Form ref="formValidate" :label-width="120">
         <FormItem :label="$t('basicInfo.role.roleNo')" prop="roleNo">
-          <Input placeholder=""></Input>
+          <Input placeholder="" class="width260"></Input>
         </FormItem>
         <FormItem :label="$t('basicInfo.role.roleName')" prop="roleName">
-          <Input placeholder=""></Input>
+          <Input placeholder="" class="width260"></Input>
         </FormItem>
         <FormItem :label="$t('basicInfo.role.roleStatus')" prop="roles">
           <i-switch true-color="#13ce66" false-color="#c5c8ce" size="large">

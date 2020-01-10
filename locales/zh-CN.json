@@ -64,7 +64,46 @@
       "min": "分钟",
       "setTeachWeekRadioOne": "统一教学周（每周的教学日和教学时间相同）",
       "setTeachWeekRadioTwo": "单双周（每月单双周教学周的教学日和教学时间不同）"
+    },
+    "major": {
+      "addSchool": "添加学院",
+      "editSchool": "编辑学院",
+      "addProfession": "添加专业",
+      "editProfession": "添加专业",
+      "professionListTitle": "专业列表",
+      "addClass": "添加班级",
+      "editClass": "编辑班级",
+      "serialNo": "序号",
+      "classNo": "班级编号",
+      "className": "班级名称",
+      "createTime": "建班时间",
+      "profession": "专业",
+      "headTeacher": "班主任",
+      "counselor": "辅导员",
+      "fixClassRoom": "固定教室",
+      "oprTitle": "操作",
+      "collegeNo": "学院编号",
+      "collegeName": "学院名称",
+      "collegeManage": "院系管理",
+      "innerCollege": "所属学院",
+      "professionNo": "专业编号",
+      "professionName": "专业名称",
+      "bulid": "教学楼",
+      "collegeAndProfession": "学院/专业",
+      "buildAndClassroome": "教学楼/教室"
     }
+  },
+  "opr": {
+    "edit": "编辑",
+    "delete": "删除",
+    "ok": "确定",
+    "cancel": "取消",
+    "selected": "选择"
+  },
+  "teacher": {
+    "teacherName": "教师姓名",
+    "teacherNo": "教师工号",
+    "searchNameAndNo": "姓名/工号"
   },
   "week": {
     "Mon": "周一",

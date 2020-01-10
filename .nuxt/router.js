@@ -6,6 +6,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _65ccee0c = () => interopDefault(import('../pages/formTest.vue' /* webpackChunkName: "pages/formTest" */))
 const _18c317e6 = () => interopDefault(import('../pages/listTest.vue' /* webpackChunkName: "pages/listTest" */))
 const _bed6997a = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
+const _8d9d3280 = () => interopDefault(import('../pages/basicInfo/major.vue' /* webpackChunkName: "pages/basicInfo/major" */))
 const _624df07c = () => interopDefault(import('../pages/basicInfo/organization.vue' /* webpackChunkName: "pages/basicInfo/organization" */))
 const _8a322982 = () => interopDefault(import('../pages/basicInfo/role.vue' /* webpackChunkName: "pages/basicInfo/role" */))
 const _f74e7796 = () => interopDefault(import('../pages/basicInfo/term.vue' /* webpackChunkName: "pages/basicInfo/term" */))
@@ -39,6 +40,10 @@ export const routerOptions = {
     path: "/login",
     component: _bed6997a,
     name: "login"
+  }, {
+    path: "/basicInfo/major",
+    component: _8d9d3280,
+    name: "basicInfo-major"
   }, {
     path: "/basicInfo/organization",
     component: _624df07c,

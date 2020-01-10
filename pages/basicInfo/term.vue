@@ -96,6 +96,13 @@
       </Table>
     </div>
 
+    <div class="container-bottom-block">
+      <div class="pull-right">
+        <Page :total="1000" :page-size-opts="[10,20,50,100]" show-sizer show-elevator/>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
     <!--添加学年模态框-->
     <Modal
       v-model="yearModal"
@@ -106,15 +113,15 @@
       @on-ok="okYear"
       @on-cancel="cancelYear">
 
-      <Form ref="formValidate" :label-width="80">
+      <Form ref="formValidate" :label-width="120">
         <FormItem :label="$t('basicInfo.term.yearName')" prop="roleNo">
-          <Input placeholder=""></Input>
+          <Input placeholder="" class="width260"></Input>
         </FormItem>
         <FormItem :label="$t('basicInfo.term.startTime')" prop="roleName">
-          <DatePicker type="date" placeholder="" style="width: 100%"></DatePicker>
+          <DatePicker type="date" placeholder="" class="width260"></DatePicker>
         </FormItem>
         <FormItem :label="$t('basicInfo.term.endTime')" prop="roles">
-          <DatePicker type="date" placeholder="" style="width: 100%"></DatePicker>
+          <DatePicker type="date" placeholder="" class="width260"></DatePicker>
         </FormItem>
       </Form>
     </Modal>
@@ -131,18 +138,18 @@
       @on-ok="okTerm"
       @on-cancel="cancelTerm">
 
-      <Form ref="formValidate" :label-width="80">
+      <Form ref="formValidate" :label-width="120">
         <FormItem :label="$t('basicInfo.term.termNo')" prop="roleNo">
-          <Input placeholder=""></Input>
+          <Input placeholder="" class="width260"></Input>
         </FormItem>
         <FormItem :label="$t('basicInfo.term.termName')" prop="roleNo">
-          <Input placeholder=""></Input>
+          <Input placeholder="" class="width260"></Input>
         </FormItem>
         <FormItem :label="$t('basicInfo.term.startTime')" prop="roleName">
-          <DatePicker type="date" placeholder="" style="width: 100%"></DatePicker>
+          <DatePicker type="date" placeholder="" class="width260"></DatePicker>
         </FormItem>
         <FormItem :label="$t('basicInfo.term.endTime')" prop="roles">
-          <DatePicker type="date" placeholder="" style="width: 100%"></DatePicker>
+          <DatePicker type="date" placeholder="" class="width260"></DatePicker>
         </FormItem>
       </Form>
 
@@ -303,6 +310,10 @@ export default {
         'max-height': '',
         'overflow-y': 'auto'
       },
+      styleDrawerHeight: {
+        'height': '',
+        'overflow-y': 'auto'
+      },
       columns: [
         {
           title: this.$t('basicInfo.term.status'),
@@ -427,7 +438,9 @@ export default {
     }
   },
   created() {
-
+    let _self = this;
+    this.tableH();
+    this.init();
   },
   methods: {
     rowClassName (row, index) {
@@ -435,6 +448,22 @@ export default {
         return 'demo-table-info-row';
       }
       return '';
+    },tableH(){
+      if (process.browser) {
+        this.styleTableHeight["max-height"] = window.innerHeight - 80 - 35 - 55 + 'px';
+        this.styleDrawerHeight.height = window.innerHeight - 80 - 30 + 'px';
+        this.tableHeight = window.innerHeight - 80 - 50;
+        this.$store.commit("SET_DEFAULT_RIGHT_OVERFLOWY",false);
+      }
+    },
+    init(){
+      var _self = this;
+      this.$parent.$parent.showLoading = true;
+
+      setTimeout(function () {
+        //_self.$store.commit("SET_ALL_LOADING",false)
+        _self.$parent.$parent.showLoading = false;
+      },2000);
     },
     addYearBtn(event){
       this.yearModal = true;
