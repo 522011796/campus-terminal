@@ -10,6 +10,7 @@ const _2a7e7393 = () => interopDefault(import('../pages/basicInfo/floor.vue' /* 
 const _8d9d3280 = () => interopDefault(import('../pages/basicInfo/major.vue' /* webpackChunkName: "pages/basicInfo/major" */))
 const _624df07c = () => interopDefault(import('../pages/basicInfo/organization.vue' /* webpackChunkName: "pages/basicInfo/organization" */))
 const _8a322982 = () => interopDefault(import('../pages/basicInfo/role.vue' /* webpackChunkName: "pages/basicInfo/role" */))
+const _4b458ff5 = () => interopDefault(import('../pages/basicInfo/teacherManages.vue' /* webpackChunkName: "pages/basicInfo/teacherManages" */))
 const _f74e7796 = () => interopDefault(import('../pages/basicInfo/term.vue' /* webpackChunkName: "pages/basicInfo/term" */))
 const _5225dfa8 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -57,6 +58,10 @@ export const routerOptions = {
     path: "/basicInfo/role",
     component: _8a322982,
     name: "basicInfo-role"
+  }, {
+    path: "/basicInfo/teacherManages",
+    component: _4b458ff5,
+    name: "basicInfo-teacherManages"
   }, {
     path: "/basicInfo/term",
     component: _f74e7796,

@@ -126,3 +126,20 @@ table th a{
 .width260{
   width: 260px;
 }
+/**
+内部菜单和内容布局
+ */
+
+.layout-innder-tree-left{
+  width: 200px;
+  border-right: 1px solid #dcdee2;
+  padding:0px 0px;
+}
+.layout-inner-tree-right{
+  margin-left: 200px;
+  padding:5px 10px;
+  background: #ffffff;
+}
+button i{
+  margin-right: 5px;
+}

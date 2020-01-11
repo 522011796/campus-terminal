@@ -23,7 +23,7 @@
           },
           {
             "title": "教工管理",
-            "url": "/listTest"
+            "url": "/basicInfo/teacherManages"
           },
           {
             "title": "学生管理",

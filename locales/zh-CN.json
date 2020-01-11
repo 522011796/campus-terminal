@@ -122,6 +122,30 @@
       "floorSelect": "选择楼层",
       "floorCopyed": "复制到",
       "floorNotCopyed": "不可复制楼层"
+    },
+    "teacherManges": {
+      "addTeacher": "添加教师",
+      "serialNo": "序号",
+      "teacherNo": "工号",
+      "sex": "性别",
+      "idCardNo": "身份证号",
+      "teacherName": "姓名",
+      "mobile": "联系电话",
+      "department": "所属部门",
+      "intoTime": "到校时间",
+      "workTime": "参加工作时间",
+      "jobName": "职称",
+      "status": "在职状态",
+      "nations": "民族",
+      "birthday": "出生日期",
+      "phone": "手机号",
+      "email": "电子邮箱",
+      "jobLevel": "职称等级",
+      "teacherType": "教职工类别",
+      "oprTitle": "操作",
+      "selectDept": "选择部门",
+      "resetPwd": "重置密码",
+      "unBind": "解绑"
     }
   },
   "opr": {
@@ -129,7 +153,9 @@
     "delete": "删除",
     "ok": "确定",
     "cancel": "取消",
-    "selected": "选择"
+    "selected": "选择",
+    "expand": "导入",
+    "save": "保存"
   },
   "teacher": {
     "teacherName": "教师姓名",
