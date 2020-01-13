@@ -57,12 +57,12 @@
         </div>
         <div class="layout-right-right">
           <div class="container-top-block">
-            <Button type="warning" class="font-size-12" ghost @click="addMutlClass($event)"><i class="fa fa-upload"></i>{{$t("opr.expand")}}</Button>
+            <Button type="warning" class="font-size-12" ghost @click="expendClass($event)"><i class="fa fa-upload"></i>{{$t("opr.expand")}}</Button>
           </div>
           <div class="margin-top-5">
             <Table border ref="selection" size="small" :columns="columns" :data="data">
               <template slot-scope="{ row, index }" slot="oprTitle">
-                <a href="javascript:;" @click="addClass($event)">{{ $t('opr.edit') }}</a>
+                <a href="javascript:;" @click="addTeacher($event)">{{ $t('opr.edit') }}</a>
                 |
                 <a href="javascript:;" class="color-error" @click="deleteTeacher($event)">{{ $t('opr.delete') }}</a>
                 |
@@ -355,6 +355,9 @@ export default {
         }
       };
       this.$Modal.confirm(config);
+    },
+    expendClass(event){
+
     }
   }
 }
